@@ -3,625 +3,269 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>مونة وطيب | المتجر</title>
-    <meta
-      name="description"
-      content="متجر مونة وطيب للعسل والمربّى والدبس والخل وزيت الزيتون."
-    >
+    <meta name="description" content="متجر مونة وطيب للعسل والمربّى والدبس والخل وزيت الزيتون." >
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
- <body>
-  <header class="site-header">
-    <a
-      class="store-brand"
-      href="#hero-title"
-      aria-label="مونة وطيب — الرئيسية"
-    >
-      <span class="store-brand-mark" aria-hidden="true">م</span>
-
-      <span class="store-brand-text">
-        <strong>مونة وطيب</strong>
-        <span>مونة من البيت</span>
-      </span>
-    </a>
-
-   <nav class="main-nav" aria-label="التنقّل الرئيسي">
-  <a href="#products">منتجاتنا</a>
-  <a href="#our-story">حكايتنا</a>
-  <a
-  class="whatsapp-help"
-  href="https://wa.me/962779693874?text=مرحبا،%20عندي%20استفسار%20عن%20منتجات%20مونة%20وطيب."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="عندك سؤال؟ تواصل معنا عبر واتساب، يفتح في نافذة جديدة"
->
-  <span class="whatsapp-help-label" aria-hidden="true">
-    عندك سؤال؟
-  </span>
-
-  <span class="whatsapp-help-icon" aria-hidden="true">؟</span>
-</a>
-</nav>
-
-    <button
-      class="cart-button"
-      id="open-cart"
-      type="button"
-      aria-haspopup="dialog"
-      aria-controls="cart-dialog"
-    >
-      السلة
-      <span
-        class="cart-count"
-        id="cart-count"
-        aria-live="polite"
-        aria-atomic="true"
-      >0</span>
-    </button>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <img
-        class="hero-image"
-        src="assets/hero-products.png"
-        alt="مشهد توضيحي للعسل والمربّى والدبس وزيت الزيتون"
-        fetchpriority="high"
-      >
-
-      <div class="hero-content">
-        <h1 id="hero-title">مونة وطيب</h1>
-
-        <p class="hero-description">
-          عسل، مربّى، دبس وخل تفاح.
-          اختار منتجاتك وجهّز طلبك بسهولة.
-        </p>
-
-        <a class="primary-button" href="#products">
-          تسوق المنتجات
-        </a>
-      </div>
-    </section>
-
-    <section
-      class="products-section"
-      id="products"
-      aria-labelledby="products-title"
-    >
-      <div class="section-heading">
-        <h2 id="products-title">منتجاتنا</h2>
-        <p>اختار من تشكيلتنا وأضف لسلتك.</p>
-      </div>
-
-      <div
-  class="product-filters"
-  role="group"
-  aria-label="تصفية المنتجات حسب النوع"
->
-  <button type="button" data-category="all" aria-pressed="true">
-    الكل
-  </button>
-
-  <button type="button" data-category="honey" aria-pressed="false">
-    العسل
-  </button>
-
-  <button type="button" data-category="molasses" aria-pressed="false">
-    الدبس
-  </button>
-
-  <button type="button" data-category="jam" aria-pressed="false">
-    المربّى
-  </button>
-
-  <button type="button" data-category="vinegar" aria-pressed="false">
-    الخل
-  </button>
-
-  <button type="button" data-category="sumac" aria-pressed="false">
-    السماق
-  </button>
-</div>
-
-<p
-  class="filter-status"
-  id="filter-status"
-  role="status"
-  aria-atomic="true"
-></p>
-
-      <div class="product-grid"></div>
-    </section>
-
-    <section
-  class="story-section"
-  id="our-story"
-  aria-labelledby="story-title"
->
-  <div class="story-banner">
-    <h2 id="story-title">
-      مونة معمولة
-      <br>
-      على مهل
-    </h2>
-
-    <p class="story-intro">
-      في مونة طيب نختار منتجاتنا بعناية، ونهتم بالتفاصيل
-      من أول المكونات لحد ما توصل لبيتكم. هدفنا نقدم مونة
-      بطعم طيب وجودة نرضى فيها لبيوتنا قبل بيوتكم.
-    </p>
-  </div>
-
-  <div class="story-details">
-    <h3>من وين بدأت الحكاية؟</h3>
-
-    <p>
-      بدأت مونة طيب من حبنا للمونة والمنتجات اللي إلها مكان
-      على كل سفرة. حبينا نقدمها بطريقة بسيطة ومرتبة،
-      بدون تعقيد، مع اهتمام بالطعم والجودة في كل منتج.
-    </p>
-
-    <ul class="story-values" aria-label="القيم التي نهتم بها">
-      <li>مكونات مختارة</li>
-      <li>تحضير بعناية</li>
-      <li>طعم قريب من البيت</li>
-    </ul>
-  </div>
-</section>
-
-<section class="faq-section" id="faq" aria-labelledby="faq-title">
-  <div class="section-heading">
-    <h2 id="faq-title">أسئلة بتهمّك</h2>
-    <p>معلومات تساعدك تختار وتطلب وإنت مرتاح.</p>
-  </div>
-
-  <div class="faq-list">
-    <details class="faq-item">
-      <summary>كيف أطلب من الموقع ؟</summary>
-      <div class="faq-answer">
-        <p>
-          اختار المنتج والحجم والعدد، وأضفهم للسلة.
-          افتح السلة وعبّي بياناتك، ثم اضغط «مراجعة الطلب».
-          بعدها اضغط «متابعة عبر واتساب» وأرسل الرسالة الجاهزة،
-          وبنأكد معك التوفر والمبلغ وموعد التوصيل المتوقع.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>لوين بتوصلوا ؟ وفي استلام مباشر ؟</summary>
-      <div class="faq-answer">
-        <p>
-          التوصيل متاح لجميع محافظات الأردن من خلال شركة توصيل.
-          حاليًا ما في محل أو نقطة استلام مباشر،
-          واستلام الطلبات بيكون عن طريق التوصيل فقط.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>كم أجرة التوصيل ؟ وهل هي ضمن مجموع السلة ؟</summary>
-      <div class="faq-answer">
-        <p>
-          المجموع الظاهر بالسلة للمنتجات فقط.
-          أجرة التوصيل بتختلف حسب المنطقة وتسعيرة شركة التوصيل،
-          وبنوضحها مع المبلغ الكامل قبل تثبيت الطلب.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>بقدر أعدّل طلبي أو ألغيه ؟</summary>
-      <div class="faq-answer">
-        <p>
-          نعم، تواصل معنا قبل تسليم طلبك لشركة التوصيل.
-          بعد تسليمه للشركة، ما بنقبل التعديل أو الإلغاء
-          أو الإرجاع أو التبديل لمجرد تغيير الرأي.
-          إذا كان في خطأ أو خلل من طرفنا، بتطبق سياسة
-          معالجة الطلبات الموضّحة بالسؤال التالي.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>شو بعمل إذا وصلني طلب غلط أو فيه خلل من طرفكم ؟</summary>
-      <div class="faq-answer">
-        <p>
-          تواصل معنا خلال يوم من استلام الطلب، ووضّح المشكلة،
-          وأرسل صورة إذا أمكن. إذا كان الخطأ أو الخلل من طرفنا،
-          إلك خيار التبديل أو الإرجاع واسترداد المبلغ،
-          وإحنا بنتحمّل جميع التكاليف المرتبطة بمعالجة المشكلة،
-          بما فيها الإرجاع وتوصيل البديل.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>هل المربّى والعسل والدبس فيها إضافات ؟</summary>
-      <div class="faq-answer">
-        <p>
-          المربّى فيها سكر مضاف، أما العسل والدبس فبدون إضافات.
-          إذا عندك سؤال عن مكونات منتج معيّن، تواصل معنا قبل الطلب.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>عندي سؤال ثاني، كيف أتواصل معكم ؟</summary>
-      <div class="faq-answer">
-        <p>
-          اضغط علامة الاستفهام أسفل الصفحة للتواصل معنا
-          عبر واتساب، وابعتلنا سؤالك.
-        </p>
-      </div>
-    </details>
-  </div>
-</section>
-<section
-  class="faq-section"
-  id="storage-guide"
-  aria-labelledby="storage-title"
->
-  <div class="section-heading">
-    <h2 id="storage-title">كيف أحفظ المنتجات؟</h2>
-    <p>نصائح بسيطة للعناية بالعسل والمربّى والدبس.</p>
-  </div>
-
-  <div class="faq-list">
-
-    <details class="faq-item">
-      <summary>كيف أحفظ العسل؟</summary>
-      <div class="faq-answer">
-        <p>
-          احفظ العسل بمكان جاف ومعتدل الحرارة، بعيدًا عن
-          الشمس والفرن، وأغلق العبوة بإحكام.
-          استخدم ملعقة نظيفة وجافة.
-          العسل ما بحتاج ثلاجة عادةً، والتبلور أو ظهور
-          حبيبات فيه تغيّر طبيعي لا يعني بحد ذاته إنه خرب.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>كيف أحفظ المربّى؟</summary>
-      <div class="faq-answer">
-        <p>
-          احفظ المربّى بالثلاجة بعد الفتح، واستخدم ملعقة
-          نظيفة وجافة. خذ الكمية المطلوبة وأغلق المرطبان
-          ورجّعه للثلاجة مباشرة، ولا ترجع بقايا صحن التقديم إليه.
-          إذا ظهر عفن، تخلّص من كامل المحتوى؛
-          إزالة الطبقة الظاهرة مش كافية.
-        </p>
-      </div>
-    </details>
-
-    <details class="faq-item">
-      <summary>كيف أحفظ الدبس؟</summary>
-      <div class="faq-answer">
-        <p>
-          أغلق العبوة بإحكام بعد كل استخدام، واستخدم
-          ملعقة نظيفة وجافة، وتجنّب إدخال الماء أو بقايا الطعام.
-          أبعد العبوة عن الشمس والحرارة المباشرة.
-          الحاجة للتبريد بتختلف حسب نوع الدبس وطريقة تحضيره؛
-          تواصل معنا لمعرفة طريقة الحفظ المناسبة للنوع اللي طلبته.
-        </p>
-      </div>
-    </details>
-
-  </div>
-</section>
-  </main>
-<footer class="site-footer">
-  <div class="footer-content">
-
-    <div class="footer-brand">
-      <a href="#hero-title">مونة وطيب</a>
-      <p>مونة من البيت، لبيتكم.</p>
-      <span>التوصيل لجميع محافظات الأردن</span>
-    </div>
-
-    <nav class="footer-links" aria-label="روابط أسفل الصفحة">
-      <h2>تصفّح المتجر</h2>
-      <a href="#products">منتجاتنا</a>
-      <a href="#our-story">حكايتنا</a>
-      <a href="#faq">أسئلة بتهمّك</a>
-      <a href="#storage-guide">دليل حفظ المنتجات</a>
-    </nav>
-
-    <div class="footer-contact">
-      <h2>تواصل معنا</h2>
-      <p>عندك سؤال عن منتج أو طلبك؟</p>
-
-      <a
-        class="footer-whatsapp"
-        href="https://wa.me/962779693874"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="تواصل معنا عبر واتساب، يفتح في نافذة جديدة"
-      >
-        راسلنا على واتساب
+  <body>
+    <header class="site-header">
+      <a class="store-brand" href="#hero-title" aria-label="مونة وطيب — الرئيسية" >
+        <span class="store-brand-mark" aria-hidden="true">م</span>
+        <span class="store-brand-text">
+          <strong>مونة وطيب</strong>
+          <span>مونة من البيت</span>
+        </span>
       </a>
-
-      <span class="footer-phone" dir="ltr">
-        +962 77 969 3874
-      </span>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© مونة وطيب — جميع الحقوق محفوظة.</p>
-    <a href="#hero-title">العودة للأعلى ↑</a>
-  </div>
-</footer>  
-
-<dialog
-  class="cart-dialog"
-  id="cart-dialog"
-  aria-labelledby="cart-title"
->
-  <div class="cart-dialog-header">
-    <h2 id="cart-title">سلة المشتريات</h2>
-
-    <button
-      class="cart-close"
-      id="close-cart"
-      type="button"
-      autofocus
-    >
-      إغلاق
-    </button>
-  </div>
-
-  <div class="cart-items" id="cart-items"></div>
-
-<p
-  class="cart-summary"
-  id="cart-summary"
-  aria-live="polite"
-  aria-atomic="true"
-></p>
-
-<div class="cart-order-summary">
-  <div class="cart-total">
-    <span>إجمالي المنتجات</span>
-    <strong id="cart-total">0.000 د.أ</strong>
-  </div>
-
-  <p class="cart-delivery-note">
-    رسوم التوصيل تُحدّد عند تأكيد الطلب، وغير مشمولة بالمجموع.
-  </p>
-</div>
-<form class="checkout-form" id="checkout-form" hidden>
-  <h3>بيانات الطلب</h3>
-
-  <label for="customer-name">الاسم</label>
-  <input
-    id="customer-name"
-    name="customerName"
-    type="text"
-    autocomplete="name"
-    maxlength="80"
-    required
-  >
-
-  <label for="customer-phone">رقم الهاتف</label>
-  <input
-    id="customer-phone"
-    name="customerPhone"
-    type="tel"
-    autocomplete="tel"
-    inputmode="tel"
-    dir="ltr"
-    maxlength="20"
-    required
-  >
-
-  <label for="customer-address">المدينة والمنطقة والعنوان</label>
-  <textarea
-    id="customer-address"
-    name="customerAddress"
-    autocomplete="street-address"
-    rows="3"
-    maxlength="300"
-    required
-  ></textarea>
-<label for="payment-method">طريقة الدفع</label>
-<select id="payment-method" name="paymentMethod" required>
-  <option value="" selected disabled>اختر طريقة الدفع</option>
-  <option value="cash">الدفع عند الاستلام</option>
-  <option value="wallet">تحويل إلى المحفظة</option>
-</select>
-
-<p class="checkout-note">
-  عند اختيار المحفظة، نؤكد التوفر والمبلغ وبيانات التحويل
-  عبر واتساب قبل الدفع.
-</p>
-
-<label for="customer-notes">ملاحظات إضافية — اختياري</label>
-<textarea
-  id="customer-notes"
-  name="customerNotes"
-  rows="2"
-  maxlength="300"
-  placeholder="مثلًا: الاتصال قبل الوصول"
-></textarea>
-
-  <button class="add-to-cart checkout-submit" type="submit">
-    مراجعة الطلب
-  </button>
-
-  <div id="order-preview" hidden>
-    <label for="order-text">ملخص طلبك</label>
-    <textarea id="order-text" rows="10" readonly></textarea>
-  <a
-  class="primary-button whatsapp-button"
-  id="send-whatsapp"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  متابعة عبر واتساب
-</a>
-
-<p class="checkout-note">
-  ستفتح المحادثة برسالة جاهزة. اضغط إرسال في واتساب
-  لإرسال طلبك، ثم نؤكد التوفر ورسوم التوصيل.
-</p>
-  </div>
-</form>
-</dialog>
-
-<dialog
-  class="sizes-dialog"
-  id="sizes-dialog"
-  aria-labelledby="sizes-title"
->
-  <div class="sizes-header">
-    <h2 id="sizes-title">اختيار الأحجام</h2>
-
-    <button
-      id="close-sizes"
-      class="cart-close"
-      type="button"
-      autofocus
-    >
-      إغلاق
-    </button>
-  </div>
-
-  <p id="sizes-description">
-    حدّد الكمية المطلوبة من كل حجم. اترك الكمية صفرًا
-    للحجم الذي لا تريده.
-  </p>
-
-  <form id="sizes-form" aria-describedby="sizes-description">
-    <div class="sizes-list">
-
-      <div class="size-row" data-size="250">
-        <div class="size-info">
-          <label for="quantity-250">250 غرام</label>
-          <span class="size-price"></span>
+      <nav class="main-nav" aria-label="التنقّل الرئيسي">
+        <a href="#products">منتجاتنا</a>
+        <a href="#our-story">حكايتنا</a>
+        <a class="whatsapp-help" href="https://wa.me/962779693874?text=مرحبا،%20عندي%20استفسار%20عن%20منتجات%20مونة%20وطيب." target="_blank" rel="noopener noreferrer" aria-label="عندك سؤال؟ تواصل معنا عبر واتساب، يفتح في نافذة جديدة" >
+          <span class="whatsapp-help-label" aria-hidden="true">عندك سؤال؟</span>
+          <span class="whatsapp-help-icon" aria-hidden="true">؟</span>
+        </a>
+      </nav>
+      <button class="cart-button" id="open-cart" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" >
+        السلة
+        <span class="cart-count" id="cart-count" aria-live="polite" aria-atomic="true" >0</span>
+      </button>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-products.png" alt="مشهد توضيحي للعسل والمربّى والدبس وزيت الزيتون" fetchpriority="high" >
+        <div class="hero-content">
+          <h1 id="hero-title">مونة وطيب</h1>
+          <p class="hero-description">عسل، مربّى، دبس وخل تفاح. اختار منتجاتك وجهّز طلبك بسهولة.</p>
+          <a class="primary-button" href="#products">تسوق المنتجات</a>
         </div>
-
-        <div class="size-controls">
-          <button
-            type="button"
-            data-step="-1"
-            aria-label="تقليل كمية حجم 250 غرام"
-            disabled
-          >−</button>
-
-          <input
-            id="quantity-250"
-            name="quantity250"
-            type="number"
-            min="0"
-            max="99"
-            step="1"
-            value="0"
-            inputmode="numeric"
-            required
-          >
-
-          <button
-            type="button"
-            data-step="1"
-            aria-label="زيادة كمية حجم 250 غرام"
-          >+</button>
+      </section>
+      <section class="products-section" id="products" aria-labelledby="products-title" >
+        <div class="section-heading">
+          <h2 id="products-title">منتجاتنا</h2>
+          <p>اختار من تشكيلتنا وأضف لسلتك.</p>
+        </div>
+        <div class="product-filters" role="group" aria-label="تصفية المنتجات حسب النوع" >
+          <button type="button" data-category="all" aria-pressed="true">الكل</button>
+          <button type="button" data-category="honey" aria-pressed="false">العسل</button>
+          <button type="button" data-category="molasses" aria-pressed="false">الدبس</button>
+          <button type="button" data-category="jam" aria-pressed="false">المربّى</button>
+          <button type="button" data-category="vinegar" aria-pressed="false">الخل</button>
+          <button type="button" data-category="sumac" aria-pressed="false">السماق</button>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-atomic="true" ></p>
+        <div class="product-grid"></div>
+      </section>
+      <section class="story-section" id="our-story" aria-labelledby="story-title" >
+        <div class="story-banner">
+          <h2 id="story-title">
+            مونة معمولة
+            <br>
+            على مهل
+          </h2>
+          <p class="story-intro">في مونة طيب نختار منتجاتنا بعناية، ونهتم بالتفاصيل من أول المكونات لحد ما توصل لبيتكم. هدفنا نقدم مونة بطعم طيب وجودة نرضى فيها لبيوتنا قبل بيوتكم.</p>
+        </div>
+        <div class="story-details">
+          <h3>من وين بدأت الحكاية؟</h3>
+          <p>بدأت مونة طيب من حبنا للمونة والمنتجات اللي إلها مكان على كل سفرة. حبينا نقدمها بطريقة بسيطة ومرتبة، بدون تعقيد، مع اهتمام بالطعم والجودة في كل منتج.</p>
+          <ul class="story-values" aria-label="القيم التي نهتم بها">
+            <li>مكونات مختارة</li>
+            <li>تحضير بعناية</li>
+            <li>طعم قريب من البيت</li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <h2 id="faq-title">أسئلة بتهمّك</h2>
+          <p>معلومات تساعدك تختار وتطلب وإنت مرتاح.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>كيف أطلب من الموقع ؟</summary>
+            <div class="faq-answer">
+              <p>اختار المنتج والحجم والعدد، وأضفهم للسلة. افتح السلة وعبّي بياناتك، ثم اضغط «مراجعة الطلب». بعدها اضغط «متابعة عبر واتساب» وأرسل الرسالة الجاهزة، وبنأكد معك التوفر والمبلغ وموعد التوصيل المتوقع.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>لوين بتوصلوا ؟ وفي استلام مباشر ؟</summary>
+            <div class="faq-answer">
+              <p>التوصيل متاح لجميع محافظات الأردن من خلال شركة توصيل. حاليًا ما في محل أو نقطة استلام مباشر، واستلام الطلبات بيكون عن طريق التوصيل فقط.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>كم أجرة التوصيل ؟ وهل هي ضمن مجموع السلة ؟</summary>
+            <div class="faq-answer">
+              <p>المجموع الظاهر بالسلة للمنتجات فقط. أجرة التوصيل بتختلف حسب المنطقة وتسعيرة شركة التوصيل، وبنوضحها مع المبلغ الكامل قبل تثبيت الطلب.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>بقدر أعدّل طلبي أو ألغيه ؟</summary>
+            <div class="faq-answer">
+              <p>نعم، تواصل معنا قبل تسليم طلبك لشركة التوصيل. بعد تسليمه للشركة، ما بنقبل التعديل أو الإلغاء أو الإرجاع أو التبديل لمجرد تغيير الرأي. إذا كان في خطأ أو خلل من طرفنا، بتطبق سياسة معالجة الطلبات الموضّحة بالسؤال التالي.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>شو بعمل إذا وصلني طلب غلط أو فيه خلل من طرفكم ؟</summary>
+            <div class="faq-answer">
+              <p>تواصل معنا خلال يوم من استلام الطلب، ووضّح المشكلة، وأرسل صورة إذا أمكن. إذا كان الخطأ أو الخلل من طرفنا، إلك خيار التبديل أو الإرجاع واسترداد المبلغ، وإحنا بنتحمّل جميع التكاليف المرتبطة بمعالجة المشكلة، بما فيها الإرجاع وتوصيل البديل.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>هل المربّى والعسل والدبس فيها إضافات ؟</summary>
+            <div class="faq-answer">
+              <p>المربّى فيها سكر مضاف، أما العسل والدبس فبدون إضافات. إذا عندك سؤال عن مكونات منتج معيّن، تواصل معنا قبل الطلب.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>عندي سؤال ثاني، كيف أتواصل معكم ؟</summary>
+            <div class="faq-answer">
+              <p>اضغط علامة الاستفهام أسفل الصفحة للتواصل معنا عبر واتساب، وابعتلنا سؤالك.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="faq-section" id="storage-guide" aria-labelledby="storage-title" >
+        <div class="section-heading">
+          <h2 id="storage-title">كيف أحفظ المنتجات؟</h2>
+          <p>نصائح بسيطة للعناية بالعسل والمربّى والدبس.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>كيف أحفظ العسل؟</summary>
+            <div class="faq-answer">
+              <p>احفظ العسل بمكان جاف ومعتدل الحرارة، بعيدًا عن الشمس والفرن، وأغلق العبوة بإحكام. استخدم ملعقة نظيفة وجافة. العسل ما بحتاج ثلاجة عادةً، والتبلور أو ظهور حبيبات فيه تغيّر طبيعي لا يعني بحد ذاته إنه خرب.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>كيف أحفظ المربّى؟</summary>
+            <div class="faq-answer">
+              <p>احفظ المربّى بالثلاجة بعد الفتح، واستخدم ملعقة نظيفة وجافة. خذ الكمية المطلوبة وأغلق المرطبان ورجّعه للثلاجة مباشرة، ولا ترجع بقايا صحن التقديم إليه. إذا ظهر عفن، تخلّص من كامل المحتوى؛ إزالة الطبقة الظاهرة مش كافية.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>كيف أحفظ الدبس؟</summary>
+            <div class="faq-answer">
+              <p>أغلق العبوة بإحكام بعد كل استخدام، واستخدم ملعقة نظيفة وجافة، وتجنّب إدخال الماء أو بقايا الطعام. أبعد العبوة عن الشمس والحرارة المباشرة. الحاجة للتبريد بتختلف حسب نوع الدبس وطريقة تحضيره؛ تواصل معنا لمعرفة طريقة الحفظ المناسبة للنوع اللي طلبته.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero-title">مونة وطيب</a>
+          <p>مونة من البيت، لبيتكم.</p>
+          <span>التوصيل لجميع محافظات الأردن</span>
+        </div>
+        <nav class="footer-links" aria-label="روابط أسفل الصفحة">
+          <h2>تصفّح المتجر</h2>
+          <a href="#products">منتجاتنا</a>
+          <a href="#our-story">حكايتنا</a>
+          <a href="#faq">أسئلة بتهمّك</a>
+          <a href="#storage-guide">دليل حفظ المنتجات</a>
+        </nav>
+        <div class="footer-contact">
+          <h2>تواصل معنا</h2>
+          <p>عندك سؤال عن منتج أو طلبك؟</p>
+          <a class="footer-whatsapp" href="https://wa.me/962779693874" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب، يفتح في نافذة جديدة" >راسلنا على واتساب</a>
+          <span class="footer-phone" dir="ltr">+962 77 969 3874</span>
         </div>
       </div>
-
-      <div class="size-row" data-size="500">
-        <div class="size-info">
-          <label for="quantity-500">500 غرام</label>
-          <span class="size-price"></span>
-        </div>
-
-        <div class="size-controls">
-          <button
-            type="button"
-            data-step="-1"
-            aria-label="تقليل كمية حجم 500 غرام"
-            disabled
-          >−</button>
-
-          <input
-            id="quantity-500"
-            name="quantity500"
-            type="number"
-            min="0"
-            max="99"
-            step="1"
-            value="0"
-            inputmode="numeric"
-            required
-          >
-
-          <button
-            type="button"
-            data-step="1"
-            aria-label="زيادة كمية حجم 500 غرام"
-          >+</button>
-        </div>
+      <div class="footer-bottom">
+        <p>© مونة وطيب — جميع الحقوق محفوظة.</p>
+        <a href="#hero-title">العودة للأعلى ↑</a>
       </div>
-
-      <div class="size-row" data-size="1000">
-        <div class="size-info">
-          <label for="quantity-1000">1 كيلوغرام</label>
-          <span class="size-price"></span>
-        </div>
-
-        <div class="size-controls">
-          <button
-            type="button"
-            data-step="-1"
-            aria-label="تقليل كمية حجم كيلوغرام"
-            disabled
-          >−</button>
-
-          <input
-            id="quantity-1000"
-            name="quantity1000"
-            type="number"
-            min="0"
-            max="99"
-            step="1"
-            value="0"
-            inputmode="numeric"
-            required
-          >
-
-          <button
-            type="button"
-            data-step="1"
-            aria-label="زيادة كمية حجم كيلوغرام"
-          >+</button>
-        </div>
+    </footer>
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title" >
+      <div class="cart-dialog-header">
+        <h2 id="cart-title">سلة المشتريات</h2>
+        <button class="cart-close" id="close-cart" type="button" autofocus >إغلاق</button>
       </div>
-
-    </div>
-
-    <div class="cart-total">
-      <span>مجموع الاختيارات</span>
-      <strong id="sizes-total" aria-live="polite">
-        0.000 د.أ
-      </strong>
-    </div>
-
-    <p id="sizes-message" role="status"></p>
-
-    <button
-      class="add-to-cart"
-      id="add-selected-sizes"
-      type="submit"
-      disabled
-    >
-      أضف للسلة
-    </button>
-  </form>
-</dialog>
-
+      <div class="cart-items" id="cart-items"></div>
+      <p class="cart-summary" id="cart-summary" aria-live="polite" aria-atomic="true" ></p>
+      <div class="cart-order-summary">
+        <div class="cart-total">
+          <span>إجمالي المنتجات</span>
+          <strong id="cart-total">0.000 د.أ</strong>
+        </div>
+        <p class="cart-delivery-note">رسوم التوصيل تُحدّد عند تأكيد الطلب، وغير مشمولة بالمجموع.</p>
+      </div>
+      <form class="checkout-form" id="checkout-form" hidden>
+        <h3>بيانات الطلب</h3>
+        <label for="customer-name">الاسم</label>
+        <input id="customer-name" name="customerName" type="text" autocomplete="name" maxlength="80" required >
+        <label for="customer-phone">رقم الهاتف</label>
+        <input id="customer-phone" name="customerPhone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" maxlength="20" required >
+        <label for="customer-address">المدينة والمنطقة والعنوان</label>
+        <textarea id="customer-address" name="customerAddress" autocomplete="street-address" rows="3" maxlength="300" required ></textarea>
+        <label for="payment-method">طريقة الدفع</label>
+        <select id="payment-method" name="paymentMethod" required>
+          <option value="" selected disabled>اختر طريقة الدفع</option>
+          <option value="cash">الدفع عند الاستلام</option>
+          <option value="wallet">تحويل إلى المحفظة</option>
+        </select>
+        <p class="checkout-note">عند اختيار المحفظة، نؤكد التوفر والمبلغ وبيانات التحويل عبر واتساب قبل الدفع.</p>
+        <label for="customer-notes">ملاحظات إضافية — اختياري</label>
+        <textarea id="customer-notes" name="customerNotes" rows="2" maxlength="300" placeholder="مثلًا: الاتصال قبل الوصول" ></textarea>
+        <button class="add-to-cart checkout-submit" type="submit">مراجعة الطلب</button>
+        <div id="order-preview" hidden>
+          <label for="order-text">ملخص طلبك</label>
+          <textarea id="order-text" rows="10" readonly></textarea>
+          <a class="primary-button whatsapp-button" id="send-whatsapp" target="_blank" rel="noopener noreferrer" >متابعة عبر واتساب</a>
+          <p class="checkout-note">ستفتح المحادثة برسالة جاهزة. اضغط إرسال في واتساب لإرسال طلبك، ثم نؤكد التوفر ورسوم التوصيل.</p>
+        </div>
+      </form>
+    </dialog>
+    <dialog class="sizes-dialog" id="sizes-dialog" aria-labelledby="sizes-title" >
+      <div class="sizes-header">
+        <h2 id="sizes-title">اختيار الأحجام</h2>
+        <button id="close-sizes" class="cart-close" type="button" autofocus >إغلاق</button>
+      </div>
+      <p id="sizes-description">حدّد الكمية المطلوبة من كل حجم. اترك الكمية صفرًا للحجم الذي لا تريده.</p>
+      <form id="sizes-form" aria-describedby="sizes-description">
+        <div class="sizes-list">
+          <div class="size-row" data-size="250">
+            <div class="size-info">
+              <label for="quantity-250">250 غرام</label>
+              <span class="size-price"></span>
+            </div>
+            <div class="size-controls">
+              <button type="button" data-step="-1" aria-label="تقليل كمية حجم 250 غرام" disabled >−</button>
+              <input id="quantity-250" name="quantity250" type="number" min="0" max="99" step="1" value="0" inputmode="numeric" required >
+              <button type="button" data-step="1" aria-label="زيادة كمية حجم 250 غرام" >+</button>
+            </div>
+          </div>
+          <div class="size-row" data-size="500">
+            <div class="size-info">
+              <label for="quantity-500">500 غرام</label>
+              <span class="size-price"></span>
+            </div>
+            <div class="size-controls">
+              <button type="button" data-step="-1" aria-label="تقليل كمية حجم 500 غرام" disabled >−</button>
+              <input id="quantity-500" name="quantity500" type="number" min="0" max="99" step="1" value="0" inputmode="numeric" required >
+              <button type="button" data-step="1" aria-label="زيادة كمية حجم 500 غرام" >+</button>
+            </div>
+          </div>
+          <div class="size-row" data-size="1000">
+            <div class="size-info">
+              <label for="quantity-1000">1 كيلوغرام</label>
+              <span class="size-price"></span>
+            </div>
+            <div class="size-controls">
+              <button type="button" data-step="-1" aria-label="تقليل كمية حجم كيلوغرام" disabled >−</button>
+              <input id="quantity-1000" name="quantity1000" type="number" min="0" max="99" step="1" value="0" inputmode="numeric" required >
+              <button type="button" data-step="1" aria-label="زيادة كمية حجم كيلوغرام" >+</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <span>مجموع الاختيارات</span>
+          <strong id="sizes-total" aria-live="polite">0.000 د.أ</strong>
+        </div>
+        <p id="sizes-message" role="status"></p>
+        <button class="add-to-cart" id="add-selected-sizes" type="submit" disabled >أضف للسلة</button>
+      </form>
+    </dialog>
   </body>
 </html>

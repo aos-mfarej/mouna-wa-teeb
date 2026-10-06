@@ -1,24 +1,24 @@
 // ===== بيانات المنتجات =====
 
 const products = {
-    baladiSumac: {
+  baladiSumac: {
     name: "سماق بلدي",
     category: "sumac",
     image: "assets/baladi-sumac.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي للسماق البلدي بمرطبان بلاستيك دائري مفتوح",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي للسماق البلدي بمرطبان بلاستيك دائري مفتوح",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 3000 }
     }
   },
-  
-    figJam: {
+
+  figJam: {
     name: "مربّى التين",
     category: "jam",
     image: "assets/fig-jam.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى التين بمرطبان مفتوح، مع تين وبستان وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى التين بمرطبان مفتوح، مع تين وبستان وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 2500 },
@@ -26,24 +26,24 @@ const products = {
       1000: { label: "1 كيلوغرام", priceFils: 8000 }
     }
   },
-    appleVinegar: {
+  appleVinegar: {
     name: "خل التفاح",
-   category: "vinegar",
+    category: "vinegar",
     image: "assets/apple-vinegar.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لخل التفاح بقنينة زجاج، مع تفاح وبستان وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لخل التفاح بقنينة زجاج، مع تفاح وبستان وقت الغروب",
 
     sizes: {
       1000: { label: "1 لتر", priceFils: 4000 }
     }
   },
 
-    grapeMolasses: {
+  grapeMolasses: {
     name: "دبس العنب",
-   category: "molasses",
+    category: "molasses",
     image: "assets/grape-molasses.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس العنب بمرطبان مفتوح، مع عنب وكروم خضراء وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس العنب بمرطبان مفتوح، مع عنب وكروم خضراء وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 3000 },
@@ -52,12 +52,12 @@ const products = {
     }
   },
 
-    dateMolasses: {
+  dateMolasses: {
     name: "دبس التمر",
-   category: "molasses",
+    category: "molasses",
     image: "assets/date-molasses.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس التمر بمرطبان مفتوح، مع تمر ونخيل وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس التمر بمرطبان مفتوح، مع تمر ونخيل وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 3000 },
@@ -66,12 +66,12 @@ const products = {
     }
   },
 
-    appleJam: {
+  appleJam: {
     name: "مربّى التفاح",
     category: "jam",
     image: "assets/apple-jam.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى التفاح بمرطبان مفتوح، مع تفاح وبستان وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى التفاح بمرطبان مفتوح، مع تفاح وبستان وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 2500 },
@@ -80,12 +80,12 @@ const products = {
     }
   },
 
-    apricotJam: {
+  apricotJam: {
     name: "مربّى المشمش",
     category: "jam",
     image: "assets/apricot-jam.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى المشمش بمرطبان مفتوح، مع حبات المشمش وبستان وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى المشمش بمرطبان مفتوح، مع حبات المشمش وبستان وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 2500 },
@@ -93,13 +93,13 @@ const products = {
       1000: { label: "1 كيلوغرام", priceFils: 8000 }
     }
   },
-  
-    grapeJam: {
+
+  grapeJam: {
     name: "مربّى العنب",
     category: "jam",
     image: "assets/grape-jam.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى العنب بمرطبان مفتوح، مع العنب وكروم خضراء وقت الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لمربّى العنب بمرطبان مفتوح، مع العنب وكروم خضراء وقت الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 2500 },
@@ -108,12 +108,12 @@ const products = {
     }
   },
 
-    carob: {
+  carob: {
     name: "دبس خروب",
     category: "molasses",
     image: "assets/carob-molasses-right-lid.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس الخروب بمرطبان مفتوح، مع قرون الخروب وضوء الغروب",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس الخروب بمرطبان مفتوح، مع قرون الخروب وضوء الغروب",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 3000 },
@@ -129,7 +129,7 @@ const products = {
     priceFils: 10000,
     image: "assets/honey-soft-sunset.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي للعسل مع الشمع وحبوب اللقاح",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي للعسل مع الشمع وحبوب اللقاح",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 5000 },
@@ -140,12 +140,12 @@ const products = {
 
   pomegranate: {
     name: "دبس رمان",
-      category: "molasses",
+    category: "molasses",
     size: "250 غرام",
     priceFils: 4500,
     image: "assets/pomegranate-molasses.png",
     imageAlt:
-      "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس الرمان بين أشجار الرمان",
+    "صورة توضيحية مولّدة بالذكاء الاصطناعي لدبس الرمان بين أشجار الرمان",
 
     sizes: {
       250: { label: "250 غرام", priceFils: 4500 },
@@ -181,6 +181,12 @@ const checkoutForm = document.querySelector("#checkout-form");
 const orderPreview = document.querySelector("#order-preview");
 const orderText = document.querySelector("#order-text");
 const whatsappLink = document.querySelector("#send-whatsapp");
+
+const sizesDialog = document.querySelector("#sizes-dialog");
+const sizesForm = document.querySelector("#sizes-form");
+const sizesTotal = document.querySelector("#sizes-total");
+const sizesMessage = document.querySelector("#sizes-message");
+const addSelectedSizes = document.querySelector("#add-selected-sizes");
 
 // ===== حفظ السلة واسترجاعها =====
 
@@ -270,23 +276,7 @@ function getCartLines() {
 
     if (!product) continue;
 
-    let quantitiesBySize;
-
-    if (Number.isInteger(savedValue)) {
-      // السلة القديمة: نربط الكمية بحجم المنتج القديم.
-      const oldSizeId = Object.keys(product.sizes).find(
-        (sizeId) => product.sizes[sizeId].label === product.size
-      );
-
-      if (!oldSizeId) continue;
-
-      quantitiesBySize = {
-        [oldSizeId]: savedValue
-      };
-    } else {
-      // السلة الجديدة: لكل حجم كميته الخاصة.
-      quantitiesBySize = savedValue;
-    }
+    const quantitiesBySize = savedValue;
 
     if (
       !quantitiesBySize ||
@@ -308,11 +298,11 @@ function getCartLines() {
       }
 
       lines.push({
-        productId,
-        sizeId,
-        product,
-        size: product.sizes[sizeId],
-        quantity
+          productId,
+          sizeId,
+          product,
+          size: product.sizes[sizeId],
+          quantity
       });
     }
   }
@@ -393,7 +383,7 @@ function createCartItem(line) {
   item.querySelector(".quantity-value").textContent = quantity;
 
   item.querySelector(".cart-line-price").textContent =
-    formatPrice(size.priceFils * quantity);
+  formatPrice(size.priceFils * quantity);
 
   const description = `${product.name}، ${size.label}`;
 
@@ -426,9 +416,9 @@ function renderCart() {
   cartTotal.textContent = formatPrice(getTotalFils());
 
   cartSummary.textContent =
-    totalQuantity === 0
-      ? "سلتك فارغة حاليًا."
-      : `عدد القطع في سلتك: ${totalQuantity}`;
+  totalQuantity === 0
+  ? "سلتك فارغة حاليًا."
+  : `عدد القطع في سلتك: ${totalQuantity}`;
 
   for (const [productId, product] of Object.entries(products)) {
     const productLines = lines.filter(
@@ -464,177 +454,177 @@ function handleCartChange() {
 // ===== فتح السلة وإغلاقها =====
 
 openCartButton.addEventListener("click", () => {
-  renderCart();
-  cartDialog.showModal();
+    renderCart();
+    cartDialog.showModal();
 });
 
 closeCartButton.addEventListener("click", () => {
-  cartDialog.close();
+    cartDialog.close();
 });
 
 // ===== تعديل الكمية والحذف =====
 
 cartItems.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-action]");
+    const button = event.target.closest("button[data-action]");
 
-  if (!button || !cartItems.contains(button) || button.disabled) {
-    return;
-  }
+    if (!button || !cartItems.contains(button) || button.disabled) {
+      return;
+    }
 
-  const item = button.closest(".cart-item");
-  if (!item) return;
+    const item = button.closest(".cart-item");
+    if (!item) return;
 
-  const { productId, sizeId } = item.dataset;
-  const action = button.dataset.action;
-  const quantity = cart[productId]?.[sizeId] ?? 0;
+    const { productId, sizeId } = item.dataset;
+    const action = button.dataset.action;
+    const quantity = cart[productId]?.[sizeId] ?? 0;
 
-  if (quantity === 0) return;
+    if (quantity === 0) return;
 
-  if (action === "increase") {
-    if (quantity >= MAX_QUANTITY) return;
+    if (action === "increase") {
+      if (quantity >= MAX_QUANTITY) return;
 
-    cart[productId][sizeId] = quantity + 1;
-  } else if (action === "decrease") {
-    if (quantity === 1) {
+      cart[productId][sizeId] = quantity + 1;
+    } else if (action === "decrease") {
+      if (quantity === 1) {
+        delete cart[productId][sizeId];
+      } else {
+        cart[productId][sizeId] = quantity - 1;
+      }
+    } else if (action === "remove") {
       delete cart[productId][sizeId];
     } else {
-      cart[productId][sizeId] = quantity - 1;
+      return;
     }
-  } else if (action === "remove") {
-    delete cart[productId][sizeId];
-  } else {
-    return;
-  }
 
-  // نحذف مجموعة المنتج إذا حُذفت كل أحجامه.
-  if (Object.keys(cart[productId]).length === 0) {
-    delete cart[productId];
-  }
+    // نحذف مجموعة المنتج إذا حُذفت كل أحجامه.
+    if (Object.keys(cart[productId]).length === 0) {
+      delete cart[productId];
+    }
 
-  handleCartChange();
+    handleCartChange();
 
-  const updatedItem = Array.from(
-    cartItems.querySelectorAll(".cart-item")
-  ).find(
-    (element) =>
+    const updatedItem = Array.from(
+      cartItems.querySelectorAll(".cart-item")
+    ).find(
+      (element) =>
       element.dataset.productId === productId &&
       element.dataset.sizeId === sizeId
-  );
+    );
 
-  const nextButton = updatedItem?.querySelector(
-    `button[data-action="${action}"]`
-  );
+    const nextButton = updatedItem?.querySelector(
+      `button[data-action="${action}"]`
+    );
 
-  if (nextButton && !nextButton.disabled) {
-    nextButton.focus();
-  } else {
-    closeCartButton.focus();
-  }
+    if (nextButton && !nextButton.disabled) {
+      nextButton.focus();
+    } else {
+      closeCartButton.focus();
+    }
 });
 
 // ===== تجهيز الطلب وواتساب =====
 
 checkoutForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  invalidateOrderPreview();
+    event.preventDefault();
+    invalidateOrderPreview();
 
-  if (getTotalQuantity() === 0) return;
+    if (getTotalQuantity() === 0) return;
 
-  const formData = new FormData(checkoutForm);
+    const formData = new FormData(checkoutForm);
 
-  const name = String(
-    formData.get("customerName") ?? ""
-  ).trim();
+    const name = String(
+      formData.get("customerName") ?? ""
+    ).trim();
 
-let phone = String(
-  formData.get("customerPhone") ?? ""
-)
-  .trim()
-  // تحويل الأرقام العربية والفارسية إلى أرقام إنجليزية.
-  .replace(/[٠-٩]/g, (digit) => "٠١٢٣٤٥٦٧٨٩".indexOf(digit))
-  .replace(/[۰-۹]/g, (digit) => "۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
-  // السماح بالمسافات والشرطات والأقواس أثناء الكتابة.
-  .replace(/[\s()\-]/g, "");
+    let phone = String(
+      formData.get("customerPhone") ?? ""
+    )
+    .trim()
+    // تحويل الأرقام العربية والفارسية إلى أرقام إنجليزية.
+    .replace(/[٠-٩]/g, (digit) => "٠١٢٣٤٥٦٧٨٩".indexOf(digit))
+    .replace(/[۰-۹]/g, (digit) => "۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
+    // السماح بالمسافات والشرطات والأقواس أثناء الكتابة.
+    .replace(/[\s()\-]/g, "");
 
-// توحيد المقدمة الدولية إلى الصيغة المحلية.
-phone = phone.replace(/^(?:\+962|00962|962)/, "0");
+    // توحيد المقدمة الدولية إلى الصيغة المحلية.
+    phone = phone.replace(/^(?:\+962|00962|962)/, "0");
 
-// رقم موبايل أردني: 10 أرقام ويبدأ بـ 077 أو 078 أو 079.
-if (!/^07[789]\d{7}$/.test(phone)) {
-window.alert(
-  "يرجى إدخال رقم موبايل أردني صحيح، مثل \u20660791234567\u2069 أو \u2066+962791234567\u2069."
-);
+    // رقم موبايل أردني: 10 أرقام ويبدأ بـ 077 أو 078 أو 079.
+    if (!/^07[789]\d{7}$/.test(phone)) {
+      window.alert(
+        "يرجى إدخال رقم موبايل أردني صحيح، مثل \u20660791234567\u2069 أو \u2066+962791234567\u2069."
+      );
 
-  checkoutForm.elements.namedItem("customerPhone").focus();
-  return;
-}
+      checkoutForm.elements.namedItem("customerPhone").focus();
+      return;
+    }
 
-  const address = String(
-    formData.get("customerAddress") ?? ""
-  ).trim();
+    const address = String(
+      formData.get("customerAddress") ?? ""
+    ).trim();
 
-  const notes = String(
-    formData.get("customerNotes") ?? ""
-  ).trim();
+    const notes = String(
+      formData.get("customerNotes") ?? ""
+    ).trim();
 
-  const paymentMethod = formData.get("paymentMethod");
+    const paymentMethod = formData.get("paymentMethod");
 
-  if (!name || !phone || !address) {
-    window.alert("يرجى تعبئة الاسم والهاتف والعنوان.");
-    return;
-  }
+    if (!name || !phone || !address) {
+      window.alert("يرجى تعبئة الاسم والهاتف والعنوان.");
+      return;
+    }
 
-  if (!Object.hasOwn(paymentLabels, paymentMethod)) {
-    window.alert("يرجى اختيار طريقة الدفع.");
-    return;
-  }
+    if (!Object.hasOwn(paymentLabels, paymentMethod)) {
+      window.alert("يرجى اختيار طريقة الدفع.");
+      return;
+    }
 
-const productLines = [];
-const selectedLines = getCartLines();
+    const productLines = [];
+    const selectedLines = getCartLines();
 
-for (const [productId, product] of Object.entries(products)) {
-  const sizes = selectedLines.filter(
-    (line) => line.productId === productId
-  );
+    for (const [productId, product] of Object.entries(products)) {
+      const sizes = selectedLines.filter(
+        (line) => line.productId === productId
+      );
 
-  if (sizes.length === 0) continue;
+      if (sizes.length === 0) continue;
 
-  productLines.push(`• ${product.name}`);
+      productLines.push(`• ${product.name}`);
 
-  for (const line of sizes) {
-    const subtotal = line.size.priceFils * line.quantity;
+      for (const line of sizes) {
+        const subtotal = line.size.priceFils * line.quantity;
 
-    productLines.push(
-      `  ${line.size.label} × ${line.quantity} — ${formatPrice(subtotal)}`
-    );
-  }
-}
+        productLines.push(
+          `  ${line.size.label} × ${line.quantity} — ${formatPrice(subtotal)}`
+        );
+      }
+    }
 
-  const message = [
-    "طلب من متجر مونة وطيب",
-    "",
-    ...productLines,
-    "",
-    `مجموع المنتجات: ${formatPrice(getTotalFils())}`,
-    "رسوم التوصيل: تُحدّد عند تأكيد الطلب.",
-    `طريقة الدفع: ${paymentLabels[paymentMethod]}`,
-    "",
-    `الاسم: ${name}`,
-    `الهاتف: ${phone}`,
-    `العنوان: ${address}`,
-    `ملاحظات: ${notes || "لا توجد"}`,
-    "",
-    "يرجى تأكيد توفر المنتجات وإجمالي المبلغ مع التوصيل قبل التحويل."
-  ].join("\n");
+    const message = [
+      "طلب من متجر مونة وطيب",
+      "",
+      ...productLines,
+      "",
+      `مجموع المنتجات: ${formatPrice(getTotalFils())}`,
+      "رسوم التوصيل: تُحدّد عند تأكيد الطلب.",
+      `طريقة الدفع: ${paymentLabels[paymentMethod]}`,
+      "",
+      `الاسم: ${name}`,
+      `الهاتف: ${phone}`,
+      `العنوان: ${address}`,
+      `ملاحظات: ${notes || "لا توجد"}`,
+      "",
+      "يرجى تأكيد توفر المنتجات وإجمالي المبلغ مع التوصيل قبل التحويل."
+    ].join("\n");
 
-  orderText.value = message;
+    orderText.value = message;
 
-  whatsappLink.href =
+    whatsappLink.href =
     `https://wa.me/${WHATSAPP_NUMBER}` +
     `?text=${encodeURIComponent(message)}`;
 
-  orderPreview.hidden = false;
-  whatsappLink.focus();
+    orderPreview.hidden = false;
+    whatsappLink.focus();
 });
 
 checkoutForm.addEventListener(
@@ -648,7 +638,7 @@ checkoutForm.addEventListener(
 );
 
 function updateSizesSelection() {
-  const dialog = document.querySelector("#sizes-dialog");
+  const dialog = sizesDialog;
   const product = products[dialog.dataset.productId];
 
   if (!product) return;
@@ -669,10 +659,10 @@ function updateSizesSelection() {
     const quantity = input.valueAsNumber;
 
     const isValid =
-      input.validity.valid &&
-      Number.isInteger(quantity) &&
-      quantity >= 0 &&
-      quantity <= MAX_QUANTITY;
+    input.validity.valid &&
+    Number.isInteger(quantity) &&
+    quantity >= 0 &&
+    quantity <= MAX_QUANTITY;
 
     decrease.disabled = !isValid || quantity === 0;
     increase.disabled = !isValid || quantity === MAX_QUANTITY;
@@ -685,135 +675,133 @@ function updateSizesSelection() {
     totalFils += size.priceFils * quantity;
   }
 
-  document.querySelector("#sizes-total").textContent =
-    hasInvalidQuantity ? "—" : formatPrice(totalFils);
+  sizesTotal.textContent =
+  hasInvalidQuantity ? "—" : formatPrice(totalFils);
 
-  document.querySelector("#sizes-message").textContent =
-    hasInvalidQuantity
-      ? `أدخل عددًا صحيحًا من 0 إلى ${MAX_QUANTITY} لكل حجم.`
-      : "";
+  sizesMessage.textContent =
+  hasInvalidQuantity
+  ? `أدخل عددًا صحيحًا من 0 إلى ${MAX_QUANTITY} لكل حجم.`
+  : "";
 
- document.querySelector("#add-selected-sizes").disabled =
+  addSelectedSizes.disabled =
   hasInvalidQuantity || selectedQuantity === 0;
 }
 
-document.querySelector("#sizes-form").addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-step]");
+sizesForm.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-step]");
 
-  if (!button || button.disabled) return;
+    if (!button || button.disabled) return;
 
-  const row = button.closest(".size-row");
-  const input = row.querySelector("input");
-  const quantity = input.valueAsNumber;
-  const step = Number(button.dataset.step);
-
-  if (!input.validity.valid || !Number.isInteger(quantity)) return;
-
-  input.value = String(
-    Math.max(0, Math.min(MAX_QUANTITY, quantity + step))
-  );
-
-  updateSizesSelection();
-});
-
-document.querySelector("#sizes-form").addEventListener("input", (event) => {
-  if (event.target.matches('input[type="number"]')) {
-    updateSizesSelection();
-  }
-});
-
-document.querySelector("#sizes-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const form = event.currentTarget;
-  const dialog = document.querySelector("#sizes-dialog");
-  const message = document.querySelector("#sizes-message");
-  const productId = dialog.dataset.productId;
-
-  if (!Object.hasOwn(products, productId)) return;
-
-  const product = products[productId];
-
-  if (!form.reportValidity()) return;
-
-  const additions = {};
-
-  // نتحقق من جميع الأحجام قبل تغيير السلة.
-  for (const row of form.querySelectorAll(".size-row")) {
-    const sizeId = row.dataset.size;
-
-    if (!Object.hasOwn(product.sizes, sizeId)) continue;
-
+    const row = button.closest(".size-row");
     const input = row.querySelector("input");
     const quantity = input.valueAsNumber;
+    const step = Number(button.dataset.step);
 
-    if (
-      !Number.isInteger(quantity) ||
-      quantity < 0 ||
-      quantity > MAX_QUANTITY
-    ) {
-      message.textContent =
-        `أدخل عددًا صحيحًا من 0 إلى ${MAX_QUANTITY}.`;
-      input.focus();
-      return;
+    if (!input.validity.valid || !Number.isInteger(quantity)) return;
+
+    input.value = String(
+      Math.max(0, Math.min(MAX_QUANTITY, quantity + step))
+    );
+
+    updateSizesSelection();
+});
+
+sizesForm.addEventListener("input", (event) => {
+    if (event.target.matches('input[type="number"]')) {
+      updateSizesSelection();
     }
+});
 
-    if (quantity === 0) continue;
+sizesForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-    const existingQuantity = cart[productId]?.[sizeId] ?? 0;
+    const form = event.currentTarget;
+    const dialog = sizesDialog;
+    const message = sizesMessage;
+    const productId = dialog.dataset.productId;
 
-    if (existingQuantity + quantity > MAX_QUANTITY) {
-      message.textContent =
+    if (!Object.hasOwn(products, productId)) return;
+
+    const product = products[productId];
+
+    if (!form.reportValidity()) return;
+
+    const additions = {};
+
+    // نتحقق من جميع الأحجام قبل تغيير السلة.
+    for (const row of form.querySelectorAll(".size-row")) {
+      const sizeId = row.dataset.size;
+
+      if (!Object.hasOwn(product.sizes, sizeId)) continue;
+
+      const input = row.querySelector("input");
+      const quantity = input.valueAsNumber;
+
+      if (
+        !Number.isInteger(quantity) ||
+        quantity < 0 ||
+        quantity > MAX_QUANTITY
+      ) {
+        message.textContent =
+        `أدخل عددًا صحيحًا من 0 إلى ${MAX_QUANTITY}.`;
+        input.focus();
+        return;
+      }
+
+      if (quantity === 0) continue;
+
+      const existingQuantity = cart[productId]?.[sizeId] ?? 0;
+
+      if (existingQuantity + quantity > MAX_QUANTITY) {
+        message.textContent =
         `حجم ${product.sizes[sizeId].label}: ` +
         `في السلة ${existingQuantity} قطعة. ` +
         `يمكنك إضافة ${MAX_QUANTITY - existingQuantity} قطعة كحد أقصى.`;
 
-      input.focus();
+        input.focus();
+        return;
+      }
+
+      additions[sizeId] = quantity;
+    }
+
+    if (Object.keys(additions).length === 0) {
+      message.textContent = "اختر كمية من حجم واحد على الأقل.";
       return;
     }
 
-    additions[sizeId] = quantity;
-  }
+    if (!cart[productId]) {
+      cart[productId] = {};
+    }
 
-  if (Object.keys(additions).length === 0) {
-    message.textContent = "اختر كمية من حجم واحد على الأقل.";
-    return;
-  }
-
-  if (!cart[productId]) {
-    cart[productId] = {};
-  }
-
-  for (const [sizeId, quantity] of Object.entries(additions)) {
-    cart[productId][sizeId] =
+    for (const [sizeId, quantity] of Object.entries(additions)) {
+      cart[productId][sizeId] =
       (cart[productId][sizeId] ?? 0) + quantity;
-  }
+    }
 
-  handleCartChange();
-  dialog.close();
-
-  // نعرض السلة ليشاهد الزبون الأحجام التي أضافها.
+    handleCartChange();
+    dialog.close();
 
 });
 
 function openSizesDialog(productId) {
   const product = products[productId];
-  const dialog = document.querySelector("#sizes-dialog");
-  const form = document.querySelector("#sizes-form");
+  const dialog = sizesDialog;
+  const form = sizesForm;
 
   const hasOneSize = Object.keys(product.sizes).length === 1;
 
   dialog.dataset.productId = productId;
 
   document.querySelector("#sizes-title").textContent =
-    hasOneSize
-      ? `اختر كمية ${product.name}`
-      : `اختر أحجام ${product.name}`;
+  hasOneSize
+  ? `اختر كمية ${product.name}`
+  : `اختر أحجام ${product.name}`;
 
   document.querySelector("#sizes-description").textContent =
-    hasOneSize
-      ? "حدّد عدد العبوات المطلوبة."
-      : "حدّد الكمية المطلوبة من كل حجم. اترك الكمية صفرًا للحجم الذي لا تريده.";
+  hasOneSize
+  ? "حدّد عدد العبوات المطلوبة."
+  : "حدّد الكمية المطلوبة من كل حجم. اترك الكمية صفرًا للحجم الذي لا تريده.";
 
   form.reset();
 
@@ -835,7 +823,7 @@ function openSizesDialog(productId) {
     row.querySelector("label").textContent = selectedSize.label;
 
     row.querySelector(".size-price").textContent =
-      `سعر الوحدة: ${formatPrice(selectedSize.priceFils)}`;
+    `سعر الوحدة: ${formatPrice(selectedSize.priceFils)}`;
 
     decrease.setAttribute(
       "aria-label",
@@ -848,9 +836,9 @@ function openSizesDialog(productId) {
     );
   }
 
-  document.querySelector("#sizes-total").textContent = formatPrice(0);
-  document.querySelector("#sizes-message").textContent = "";
-  document.querySelector("#add-selected-sizes").disabled = true;
+  sizesTotal.textContent = formatPrice(0);
+  sizesMessage.textContent = "";
+  addSelectedSizes.disabled = true;
 
   if (!dialog.open) {
     dialog.showModal();
@@ -858,7 +846,7 @@ function openSizesDialog(productId) {
 }
 
 document.querySelector("#close-sizes").addEventListener("click", () => {
-  document.querySelector("#sizes-dialog").close();
+    sizesDialog.close();
 });
 // ===== بناء بطاقات المنتجات =====
 
@@ -914,13 +902,13 @@ function renderProducts() {
 
     const availableSizes = Object.values(product.sizes);
     const selectionLabel =
-  availableSizes.length === 1 ? "اختر الكمية" : "اختر الأحجام";
+    availableSizes.length === 1 ? "اختر الكمية" : "اختر الأحجام";
 
-chooseButton.textContent = selectionLabel;
+    chooseButton.textContent = selectionLabel;
 
     size.textContent = availableSizes
-      .map((item) => item.label)
-      .join(" · ");
+    .map((item) => item.label)
+    .join(" · ");
 
     const startingPrice = Math.min(
       ...availableSizes.map((item) => item.priceFils)
@@ -938,7 +926,7 @@ chooseButton.textContent = selectionLabel;
       button.setAttribute("aria-controls", "sizes-dialog");
 
       button.addEventListener("click", () => {
-        openSizesDialog(productId);
+          openSizesDialog(productId);
       });
     }
 
@@ -952,43 +940,44 @@ const productFilters = document.querySelector(".product-filters");
 const filterStatus = document.querySelector("#filter-status");
 
 productFilters.addEventListener("click", (event) => {
-  const selectedButton = event.target.closest("button[data-category]");
+    const selectedButton = event.target.closest("button[data-category]");
 
-  if (!selectedButton || !productFilters.contains(selectedButton)) {
-    return;
-  }
+    if (!selectedButton || !productFilters.contains(selectedButton)) {
+      return;
+    }
 
-  const selectedCategory = selectedButton.dataset.category;
-  let visibleCount = 0;
+    const selectedCategory = selectedButton.dataset.category;
+    let visibleCount = 0;
 
-  for (const button of productFilters.querySelectorAll("button")) {
-    button.setAttribute(
-      "aria-pressed",
-      String(button === selectedButton)
-    );
-  }
+    for (const button of productFilters.querySelectorAll("button")) {
+      button.setAttribute(
+        "aria-pressed",
+        String(button === selectedButton)
+      );
+    }
 
-  for (const card of productGrid.querySelectorAll(".product-card")) {
-    const matches =
+    for (const card of productGrid.querySelectorAll(".product-card")) {
+      const matches =
       selectedCategory === "all" ||
       card.dataset.category === selectedCategory;
 
-    card.hidden = !matches;
+      card.hidden = !matches;
 
-    if (matches) {
-      visibleCount += 1;
+      if (matches) {
+        visibleCount += 1;
+      }
     }
-  }
 
-  const categoryName = selectedButton.textContent.trim();
+    const categoryName = selectedButton.textContent.trim();
 
-  filterStatus.textContent =
+    filterStatus.textContent =
     visibleCount === 0
-      ? "لا توجد منتجات ضمن هذا التصنيف حاليًا."
-      : `${categoryName} — عدد المنتجات: ${visibleCount}`;
+    ? "لا توجد منتجات ضمن هذا التصنيف حاليًا."
+    : `${categoryName} — عدد المنتجات: ${visibleCount}`;
 });
 // ===== الحالة الأولية للصفحة =====
 
 renderProducts();
 updateCartCount();
 renderCart();
+
