@@ -3,6 +3,7 @@
 const products = {
   baladiSumac: {
     name: "سماق بلدي",
+    available: true,
     category: "sumac",
     image: "assets/baladi-sumac.png",
     imageAlt:
@@ -15,6 +16,7 @@ const products = {
 
   figJam: {
     name: "مربّى التين",
+    available: false,
     category: "jam",
     image: "assets/fig-jam.png",
     imageAlt:
@@ -28,6 +30,7 @@ const products = {
   },
   appleVinegar: {
     name: "خل التفاح",
+    available: true,
     category: "vinegar",
     image: "assets/apple-vinegar.png",
     imageAlt:
@@ -40,6 +43,7 @@ const products = {
 
   grapeMolasses: {
     name: "دبس العنب",
+    available: true,
     category: "molasses",
     image: "assets/grape-molasses.png",
     imageAlt:
@@ -54,6 +58,7 @@ const products = {
 
   dateMolasses: {
     name: "دبس التمر",
+    available: true,
     category: "molasses",
     image: "assets/date-molasses.png",
     imageAlt:
@@ -68,6 +73,7 @@ const products = {
 
   appleJam: {
     name: "مربّى التفاح",
+    available: true,
     category: "jam",
     image: "assets/apple-jam.png",
     imageAlt:
@@ -82,6 +88,7 @@ const products = {
 
   apricotJam: {
     name: "مربّى المشمش",
+    available: true,
     category: "jam",
     image: "assets/apricot-jam.png",
     imageAlt:
@@ -96,6 +103,7 @@ const products = {
 
   grapeJam: {
     name: "مربّى العنب",
+    available: true,
     category: "jam",
     image: "assets/grape-jam.png",
     imageAlt:
@@ -110,6 +118,7 @@ const products = {
 
   carob: {
     name: "دبس خروب",
+    available: true,
     category: "molasses",
     image: "assets/carob-molasses-right-lid.png",
     imageAlt:
@@ -124,6 +133,7 @@ const products = {
 
   honey: {
     name: "عسل طبيعي",
+    available: true,
     category: "honey",
     size: "500 غرام",
     priceFils: 10000,
@@ -140,6 +150,7 @@ const products = {
 
   pomegranate: {
     name: "دبس رمان",
+    available: true,
     category: "molasses",
     size: "250 غرام",
     priceFils: 4500,
@@ -176,6 +187,7 @@ const cartDialog = document.querySelector("#cart-dialog");
 const cartItems = document.querySelector("#cart-items");
 const cartSummary = document.querySelector("#cart-summary");
 const cartTotal = document.querySelector("#cart-total");
+const clearCartButton = document.querySelector("#clear-cart");
 
 const checkoutForm = document.querySelector("#checkout-form");
 const orderPreview = document.querySelector("#order-preview");
@@ -413,6 +425,7 @@ function renderCart() {
   invalidateOrderPreview();
 
   checkoutForm.hidden = totalQuantity === 0;
+  clearCartButton.disabled = totalQuantity === 0;
   cartTotal.textContent = formatPrice(getTotalFils());
 
   cartSummary.textContent =
@@ -523,7 +536,31 @@ cartItems.addEventListener("click", (event) => {
 });
 
 // ===== تجهيز الطلب وواتساب =====
+const customerPhoneInput = document.querySelector("#customer-phone");
+const customerPhoneError = document.querySelector("#customer-phone-error");
 
+function normalizePhone(value) {
+  return value
+    .trim()
+    .replace(/[٠-٩]/g, (digit) => "٠١٢٣٤٥٦٧٨٩".indexOf(digit))
+    .replace(/[۰-۹]/g, (digit) => "۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
+    .replace(/[\s()\-]/g, "")
+    .replace(/^(?:\+962|00962|962)/, "0");
+}
+
+function clearPhoneError() {
+  customerPhoneInput.removeAttribute("aria-invalid");
+  customerPhoneError.textContent = "";
+}
+
+// بعد ظهور الخطأ، نخفيه بمجرد تصحيح الرقم.
+customerPhoneInput.addEventListener("input", () => {
+  const phone = normalizePhone(customerPhoneInput.value);
+
+  if (/^07[789]\d{7}$/.test(phone)) {
+    clearPhoneError();
+  }
+});
 checkoutForm.addEventListener("submit", (event) => {
     event.preventDefault();
     invalidateOrderPreview();
@@ -536,28 +573,21 @@ checkoutForm.addEventListener("submit", (event) => {
       formData.get("customerName") ?? ""
     ).trim();
 
-    let phone = String(
-      formData.get("customerPhone") ?? ""
-    )
-    .trim()
-    // تحويل الأرقام العربية والفارسية إلى أرقام إنجليزية.
-    .replace(/[٠-٩]/g, (digit) => "٠١٢٣٤٥٦٧٨٩".indexOf(digit))
-    .replace(/[۰-۹]/g, (digit) => "۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
-    // السماح بالمسافات والشرطات والأقواس أثناء الكتابة.
-    .replace(/[\s()\-]/g, "");
+    const phone = normalizePhone(
+  String(formData.get("customerPhone") ?? "")
+);
 
-    // توحيد المقدمة الدولية إلى الصيغة المحلية.
-    phone = phone.replace(/^(?:\+962|00962|962)/, "0");
+if (!/^07[789]\d{7}$/.test(phone)) {
+  customerPhoneInput.setAttribute("aria-invalid", "true");
 
-    // رقم موبايل أردني: 10 أرقام ويبدأ بـ 077 أو 078 أو 079.
-    if (!/^07[789]\d{7}$/.test(phone)) {
-      window.alert(
-        "يرجى إدخال رقم موبايل أردني صحيح، مثل \u20660791234567\u2069 أو \u2066+962791234567\u2069."
-      );
+  customerPhoneError.textContent =
+    "أدخل رقم موبايل أردني صحيح، مثل \u20660779693874\u2069.";
 
-      checkoutForm.elements.namedItem("customerPhone").focus();
-      return;
-    }
+  customerPhoneInput.focus();
+  return;
+}
+
+clearPhoneError();
 
     const address = String(
       formData.get("customerAddress") ?? ""
@@ -868,10 +898,11 @@ function renderProducts() {
       </button>
 
       <div class="product-content">
-        <h3></h3>
+    <h3></h3>
 
-        <p class="product-size"></p>
+<p class="product-availability"></p>
 
+<p class="product-size"></p>
         <div class="product-purchase">
           <p class="product-price">
             <span>ابتداءً من </span>
@@ -892,6 +923,14 @@ function renderProducts() {
     const size = card.querySelector(".product-size");
     const price = card.querySelector(".product-price-value");
     const chooseButton = card.querySelector(".choose-sizes");
+    const availability = card.querySelector(".product-availability");
+const isAvailable = product.available !== false;
+
+availability.textContent = isAvailable ? "متوفر" : "نفدت الكمية";
+availability.classList.toggle("is-unavailable", !isAvailable);
+
+imageButton.disabled = !isAvailable;
+chooseButton.disabled = !isAvailable;
 
     image.src = product.image;
     image.alt = product.imageAlt;
@@ -904,7 +943,9 @@ function renderProducts() {
     const selectionLabel =
     availableSizes.length === 1 ? "اختر الكمية" : "اختر الأحجام";
 
-    chooseButton.textContent = selectionLabel;
+    chooseButton.textContent = isAvailable
+  ? selectionLabel
+  : "غير متوفر";
 
     size.textContent = availableSizes
     .map((item) => item.label)
@@ -974,6 +1015,22 @@ productFilters.addEventListener("click", (event) => {
     visibleCount === 0
     ? "لا توجد منتجات ضمن هذا التصنيف حاليًا."
     : `${categoryName} — عدد المنتجات: ${visibleCount}`;
+});
+clearCartButton.addEventListener("click", () => {
+  if (getTotalQuantity() === 0) return;
+
+  const confirmed = window.confirm(
+    "بدك تحذف كل المنتجات من السلة؟"
+  );
+
+  if (!confirmed) return;
+
+  for (const productId of Object.keys(cart)) {
+    delete cart[productId];
+  }
+
+  handleCartChange();
+  closeCartButton.focus();
 });
 // ===== الحالة الأولية للصفحة =====
 

@@ -182,6 +182,14 @@
         <h2 id="cart-title">سلة المشتريات</h2>
         <button class="cart-close" id="close-cart" type="button" autofocus >إغلاق</button>
       </div>
+      <button
+  id="clear-cart"
+  class="clear-cart-button"
+  type="button"
+  disabled
+>
+  إفراغ السلة
+</button>
       <div class="cart-items" id="cart-items"></div>
       <p class="cart-summary" id="cart-summary" aria-live="polite" aria-atomic="true" ></p>
       <div class="cart-order-summary">
@@ -196,7 +204,12 @@
         <label for="customer-name">الاسم</label>
         <input id="customer-name" name="customerName" type="text" autocomplete="name" maxlength="80" required >
         <label for="customer-phone">رقم الهاتف</label>
-        <input id="customer-phone" name="customerPhone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" maxlength="20" required >
+        <input id="customer-phone" name="customerPhone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" maxlength="20" required aria-describedby="customer-phone-error" >
+        <p
+  id="customer-phone-error"
+  class="field-error"
+  aria-live="polite"
+></p>
         <label for="customer-address">المدينة والمنطقة والعنوان</label>
         <textarea id="customer-address" name="customerAddress" autocomplete="street-address" rows="3" maxlength="300" required ></textarea>
         <label for="payment-method">طريقة الدفع</label>

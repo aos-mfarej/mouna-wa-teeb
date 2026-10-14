@@ -1665,10 +1665,92 @@ html {
     width: 44px;
     height: 44px;
     font-size: 1.6rem;
-    box-shadow: none;
+    box-shadow: none
   }
 
   .site-header .whatsapp-help-label {
     display: none;
   }
+}
+/* رسائل أخطاء بيانات الطلب */
+.field-error {
+  margin: 0;
+  color: #a51d32;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+.checkout-form input[aria-invalid="true"] {
+  border-color: #a51d32;
+  outline: 2px solid #a51d32;
+  outline-offset: 2px;
+}
+/* حالة توفر المنتج */
+.product-availability {
+  align-self: flex-start;
+  margin: 8px 0;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #eaf5ec;
+  color: #246337;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.product-availability.is-unavailable {
+  background: #f9e8eb;
+  color: #92243b;
+}
+
+.choose-sizes:disabled {
+  background: #685950;
+  cursor: not-allowed;
+}
+
+.choose-sizes:disabled:hover {
+  filter: none;
+}
+
+.product-image-button:disabled {
+  cursor: default;
+}
+
+.product-image-button:disabled:hover .product-image {
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .product-availability {
+    align-self: center;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+}
+/* إفراغ السلة */
+.clear-cart-button {
+  display: block;
+  min-height: 44px;
+  margin: 16px 0 0;
+  padding: 8px 14px;
+  border: 1px solid var(--brand);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--brand);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.clear-cart-button:not(:disabled):hover {
+  background: #f9e8eb;
+}
+
+.clear-cart-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
